@@ -6,7 +6,7 @@ import { Input } from "@/components/Input/input";
 import { Logo } from "@/components/Logo/logo";
 import { Button } from "@/components/Buttons/button";
 
-export const Homepage = () => {
+const Homepage = () => {
   const router = useRouter();
 
   // initialize states
@@ -73,3 +73,5 @@ export const Homepage = () => {
     </main>
   );
 };
+
+export default Homepage

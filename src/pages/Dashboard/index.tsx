@@ -1,11 +1,11 @@
-import { PropertyOverview } from "./Overviews/propertyOverview"
-import { SalesOverview } from "./Overviews/salesOverview"
-import { CustomersOverview } from "./Overviews/customersOverview"
+import PropertyOverview from "./Overviews/propertyOverview"
+import SalesOverview  from "./Overviews/salesOverview"
+import CustomersOverview  from "./Overviews/customersOverview"
 import { ListingOverviewCard } from "@/components/Card/listingOverviewCard"
 import { OutstandingOverviewCard } from "@/components/Card/outstandingCard"
 import { TopSellingCard } from "@/components/Card/topSellingCard"
 
-export const Dashboard = () => {
+const Dashboard = () => {
     return (
         <main className="px-4 md:px-12">
 
@@ -35,3 +35,5 @@ export const Dashboard = () => {
         </main>
     )
 }
+
+export default Dashboard

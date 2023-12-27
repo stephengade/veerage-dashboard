@@ -3,7 +3,7 @@ import { SaleBalanceSummary } from "@/components/Card/saleBalanceCard"
 interface iProgress {
    progress: "up" | "down"
 }
-export const OverviewChart = () => {
+const OverviewChart = () => {
    const amount = ["0.00", "0.00", "0.00", "0.00"]
    const progress = ["up", "up", "up", "down"] as const
    const title = ["Balance", "Deposit", "Purchase", "Withdrawal"]
@@ -26,3 +26,5 @@ export const OverviewChart = () => {
         </div>
     )
 }
+
+export default OverviewChart

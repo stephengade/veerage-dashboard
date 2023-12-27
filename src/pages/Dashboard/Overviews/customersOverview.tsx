@@ -1,6 +1,6 @@
 import { OverviewSummaryCard } from "@/components/Card/overviewSummaryCard";
 
-export const CustomersOverview = () => {
+const CustomersOverview = () => {
 
   const labels = ["Total", "New", "Active", "Inactive"]
   const values = [0, 0, 0, 0]
@@ -15,3 +15,5 @@ export const CustomersOverview = () => {
     <OverviewSummaryCard overviewData={CustomerCardData} type="customers" title="Customers Overview" goToLink="/listings" />
   );
 };
+
+export default CustomersOverview 
