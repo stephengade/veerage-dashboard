@@ -12,7 +12,7 @@ const CustomersOverview = () => {
   }
 
   return (
-    <OverviewSummaryCard overviewData={CustomerCardData} type="customers" title="Customers Overview" goToLink="/listings" />
+    <OverviewSummaryCard overviewData={CustomerCardData} type="customers" title="Customers Overview" goToLink="/users" />
   );
 };
 

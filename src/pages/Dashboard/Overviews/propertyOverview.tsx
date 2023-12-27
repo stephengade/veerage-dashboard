@@ -12,7 +12,7 @@ const PropertyOverview = () => {
   }
 
   return (
-    <OverviewSummaryCard overviewData={PropertyCardData} type="property" title="Property Overview" goToLink="/listings" />
+    <OverviewSummaryCard overviewData={PropertyCardData} type="property" title="Property Overview" goToLink="/listing" />
   );
 };
 
