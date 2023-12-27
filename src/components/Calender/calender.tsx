@@ -7,7 +7,7 @@ import "./calender.css"
 
 interface iCalender {
   mode?: "single" | "multiple" | "range" | "default"
-  selected: Date
+  selected: any
   defaultMonth?: Date
   setSelected: any
   footer?: any
