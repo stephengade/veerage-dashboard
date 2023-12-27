@@ -1,6 +1,6 @@
 import { OverviewSummaryCard } from "@/components/Card/overviewSummaryCard";
 
-export const PropertyOverview = () => {
+const PropertyOverview = () => {
 
   const labels = ["Total", "Available", "Sold Out"]
   const values = [0, 0, 0]
@@ -15,3 +15,5 @@ export const PropertyOverview = () => {
     <OverviewSummaryCard overviewData={PropertyCardData} type="property" title="Property Overview" goToLink="/listings" />
   );
 };
+
+export default PropertyOverview

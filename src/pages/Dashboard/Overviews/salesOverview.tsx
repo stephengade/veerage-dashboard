@@ -1,8 +1,8 @@
 import { SalesFilterButtons } from "@/components/Buttons/salesFilterButton";
 import { Box, Button, Divider } from "@chakra-ui/react";
-import { OverviewChart } from "./OverviewChart";
+import OverviewChart  from "./OverviewChart";
 
-export const SalesOverview = () => {
+const SalesOverview = () => {
    const startMonth = "Jan 2022"
    const endMonth = "Sep 2022"
    return (
@@ -36,3 +36,5 @@ export const SalesOverview = () => {
       </Box>
    )
 };
+
+export default SalesOverview 
