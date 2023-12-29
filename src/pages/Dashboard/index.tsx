@@ -1,11 +1,11 @@
 import PropertyOverview from "./Overviews/propertyOverview"
 import SalesOverview  from "./Overviews/salesOverview"
 import CustomersOverview  from "./Overviews/customersOverview"
-import { ListingOverviewCard } from "@/components/Card/listingOverviewCard"
-import { OutstandingOverviewCard } from "@/components/Card/outstandingCard"
-import { TopSellingCard } from "@/components/Card/topSellingCard"
 
 import Image from 'next/image'
+import ListingOverview from "./Overviews/listingOverview"
+import TopSellingOverview from "./Overviews/topSellingOverview"
+import BalanceOverview from "./Overviews/BalanceOverview"
 
 const Dashboard = () => {
     return (
@@ -32,9 +32,10 @@ const Dashboard = () => {
             </section>
 
             <section className="grid md:auto-rows-fr grid-cols-1 md:grid-cols-3 gap-5 mt-8 pb-8">
-            <ListingOverviewCard />
-            <OutstandingOverviewCard />
-            <TopSellingCard />
+            <ListingOverview />
+            <BalanceOverview />
+            <TopSellingOverview />
+            
         </section>
 
         </main>

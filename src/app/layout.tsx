@@ -5,6 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import { Providers } from './../utils/chakra/provider.chakra';
+import { VeergeAssistant } from '@/components/VeergeAssistant/AssistantModal';
 
 export const metadata: Metadata = {
   title: 'Veerge App',
@@ -18,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} relative`}>
+      <VeergeAssistant className="" />
         <Providers>{children}</Providers>
+       
         </body>
     </html>
   )
