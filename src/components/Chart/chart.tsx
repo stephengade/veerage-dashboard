@@ -2,7 +2,7 @@
 
 import { Box } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false })
 
@@ -42,7 +42,7 @@ export const Chart = (props: iChart) => {
   const [chartData, setChartData] = useState<iSeries[]>([])
 
   useEffect(() => {
-    
+
     const fetchData = async () => {
       try {
         setChartData(seriesData); // Set the fetched data to state
@@ -51,14 +51,14 @@ export const Chart = (props: iChart) => {
       }
     };
 
-    fetchData(); 
-  }, [seriesData]); 
+    fetchData();
+  }, [seriesData]);
 
 
 
 
 
- 
+
 
   return (
     <Box>
@@ -123,7 +123,7 @@ export const Chart = (props: iChart) => {
 
           // y asxis
 
-          yaxis: [ {
+          yaxis: [{
             axisTicks: {
               show: false
             },

@@ -18,28 +18,28 @@ const BalanceChart = () => {
 
   ]
 
-  if(Data.length < 0) {
+  if (Data.length < 0) {
     return <p>loading...</p>
   }
 
-    return (
-        <Chart
-        title="Conversion Rate"
-        subtitle="How much you have sell over the years"
-        type="line"
-        chartId="user-chart"
+  return (
+    <Chart
+      title="Conversion Rate"
+      subtitle="How much you have sell over the years"
+      type="line"
+      chartId="user-chart"
 
-        categories={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"]}
+      categories={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"]}
 
-        seriesData={Data}
-        seriesLabel={["one", "two", "three", "four", "five", "six", "seven"]}
-        gridColor={"transparent"}
-        curve="smooth"
+      seriesData={Data}
+      seriesLabel={["one", "two", "three", "four", "five", "six", "seven"]}
+      gridColor={"transparent"}
+      curve="smooth"
 
-      />
-    
+    />
 
-    )
+
+  )
 }
 
 export default BalanceChart
