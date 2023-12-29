@@ -1,4 +1,5 @@
 import { SaleBalanceSummary } from "@/components/Card/saleBalanceCard"
+import BalanceChart from "./BalanceChart"
 
 interface iProgress {
    progress: "up" | "down"
@@ -18,7 +19,7 @@ const OverviewChart = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 ">
      <div className="chart_here">
-          Working
+         <BalanceChart />
      </div>
       
       <SaleBalanceSummary SalesData={SummaryData} /> 
